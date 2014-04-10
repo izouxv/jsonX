@@ -1,0 +1,85 @@
+the performance is not good
+
+
+
+
+Map [] operator
+map["a"], it will output a MapOper object, 
+Ojbect obj = map["a"], this is MapOper asign to Ojbect, so in Object::operator=, it can judge it,
+map["a"]="a", it is String assign to MapOper
+
+
+
+Map [] operator in the mutiply thread waring
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2013-08-10 12:20:27.550 X_V[3287:3907] TIME:0.000004 S.     **********  JSONXV TEST START  ***********
+
+2013-08-10 12:20:27.551 X_V[3287:3907] Performance
+2013-08-10 12:20:27.551 X_V[3287:3907] TIME:0.000006 S.     -[JsonXV_OjbC_Test test_performance_NewFeature:]    dynamic list: 1
+2013-08-10 12:20:28.484 X_V[3287:3907] TIME:0.932971 S.     Add List List size: 10000000 NodeCount: 178570  Deep: 7
+2013-08-10 12:20:29.861 X_V[3287:3907] TIME:0.378023 S.     Add NSMutableArray size: 10000000
+2013-08-10 12:20:32.593 X_V[3287:3907] TIME:1.853248 S.     Get List end   9999999 - 10000000
+2013-08-10 12:20:34.240 X_V[3287:3907] TIME:0.345787 S.     Get NSMutableArray   9999999 - 10000000
+2013-08-10 12:20:36.312 X_V[3287:3907] TIME:1.190847 S.     Remove List Size: 10000000
+2013-08-10 12:20:36.793 X_V[3287:3907] TIME:0.180017 S.     Remove NSMutableArray Size: 10000000
+2013-08-10 12:20:37.747 X_V[3287:3907] TIME:0.953794 S.     Insert Dy List Insert: 0  List size: 10000001 NodeCount: 178570  Deep: 7
+2013-08-10 12:20:39.296 X_V[3287:3907] TIME:0.310620 S.     Insert: 0   NSMutableArray size: 10000001
+2013-08-10 12:20:42.047 X_V[3287:3907] TIME:2.750466 S.     Insert Dy List Insert: mid   List size: 10000001 NodeCount: 178570  Deep: 7
+2013-08-10 12:20:44.086 X_V[3287:3907] TIME:0.317495 S.     Insert: mid  NSMutableArray size: 100001
+2013-08-10 12:20:47.476 X_V[3287:3907] TIME:3.389254 S.     Insert Dy List Insert: end   List size: 10000001 NodeCount: 178570  Deep: 7
+2013-08-10 12:20:48.878 X_V[3287:3907] TIME:0.412096 S.     Insert: end  NSMutableArray size: 10000001
+2013-08-10 12:20:48.879 X_V[3287:3907] 
+2013-08-10 12:20:48.879 X_V[3287:3907] TIME:0.000002 S.     -[JsonXV_OjbC_Test test_performance_List_Get:]
+2013-08-10 12:20:49.934 X_V[3287:3907] TIME:0.155669 S.                                  Get List 0  Size: 10000000
+2013-08-10 12:20:53.560 X_V[3287:3907] TIME:1.721733 S.                                  Get List end  Size: 10000000
+2013-08-10 12:20:55.031 X_V[3287:3907] TIME:0.160425 S.                                  Get NSMutableArray 0 Size: 10000000
+2013-08-10 12:20:55.487 X_V[3287:3907] TIME:0.149559 S.                                  Get NSMutableArray end  Size: 10000000
+2013-08-10 12:20:55.487 X_V[3287:3907] TIME:0.000003 S.     -[JsonXV_OjbC_Test test_performance_List_Add:]
+2013-08-10 12:20:56.384 X_V[3287:3907] TIME:0.895760 S.                                  Add List Size: 10000000
+2013-08-10 12:20:57.750 X_V[3287:3907] TIME:0.372864 S.                                  Add NSMutableArray Size:10000000
+2013-08-10 12:20:57.751 X_V[3287:3907] TIME:0.000002 S.     -[JsonXV_OjbC_Test test_performance_List_RemoveAtIndex:]
+2013-08-10 12:20:59.844 X_V[3287:3907] TIME:1.203691 S.                                  Remove List Size: 10000000
+2013-08-10 12:21:00.340 X_V[3287:3907] TIME:0.187001 S.                                  Remove NSMutableArray Size: 10000000
+2013-08-10 12:21:00.341 X_V[3287:3907] TIME:0.000003 S.     -[JsonXV_OjbC_Test test_performance_List_RemoveObject:]
+2013-08-10 12:21:02.693 X_V[3287:3907] TIME:1.454576 S.                                  Remove Obj List size: 10000000
+2013-08-10 12:21:03.615 X_V[3287:3907] TIME:0.608650 S.                                  Remove Obj NSMutableArray size: 10000000
+2013-08-10 12:21:03.639 X_V[3287:3907] TIME:0.023834 S.     Insert List
+2013-08-10 12:21:03.654 X_V[3287:3907] TIME:0.002813 S.     Insert NSMutableArray
+2013-08-10 12:21:06.162 X_V[3287:3907] TIME:2.507631 S.     -[JsonXV_OjbC_Test test_error_list_remove_add_insert]
+2013-08-10 12:21:07.051 X_V[3287:3907] TIME:0.887914 S.     -[JsonXV_OjbC_Test test_error_list_insert_get:]
+2013-08-10 12:21:07.147 X_V[3287:3907] TIME:0.096012 S.     -[JsonXV_OjbC_Test test_error_list_add_get:]
+2013-08-10 12:21:09.406 X_V[3287:3907] TIME:2.232038 S.     -[JsonXV_OjbC_Test test_error_list_set_get:]
+2013-08-10 12:21:09.530 X_V[3287:3907] TIME:0.122719 S.     -[JsonXV_OjbC_Test test_error_list_removeObj:]
+2013-08-10 12:21:13.342 X_V[3287:3907] TIME:3.812068 S.     -[JsonXV_OjbC_Test test_error_list_Array:]
+2013-08-10 12:21:13.982 X_V[3287:3907] TIME:0.639487 S.     -[JsonXV_OjbC_Test test_error_list_indexOfObject:]
+2013-08-10 12:21:14.699 X_V[3287:3907] TIME:0.715829 S.     -[JsonXV_OjbC_Test test_error_list_excludeDuplicates:]
+2013-08-10 12:21:17.392 X_V[3287:3907] TIME:2.692549 S.     -[JsonXV_OjbC_Test test_error_list_remove:]
+2013-08-10 12:21:24.091 X_V[3287:3907] TIME:6.697456 S.     -[JsonXV_OjbC_Test test_error_list_contains:]
+2013-08-10 12:21:24.404 X_V[3287:3907] TIME:0.312847 S.     -[JsonXV_OjbC_Test test_error_list_ADD:]
+2013-08-10 12:21:25.899 X_V[3287:3907] TIME:1.494297 S.     -[JsonXV_OjbC_Test test_error_map_mess]
+2013-08-10 12:21:27.056 X_V[3287:3907] TIME:1.156215 S.     -[JsonXV_OjbC_Test test_error_map_Array]
+2013-08-10 12:21:27.057 X_V[3287:3907] TIME:0.000003 S.     -[JsonXV_OjbC_Test test_error_map_Array_VS_Put]
+2013-08-10 12:21:27.196 X_V[3287:3907] TIME:0.138849 S.                                  Map Array
+2013-08-10 12:21:27.324 X_V[3287:3907] TIME:0.127373 S.                                  Map Put
+2013-08-10 12:21:27.649 X_V[3287:3907] TIME:0.324755 S.     -[JsonXV_OjbC_Test test_error_Integer]  int2str double has problem
+2013-08-10 12:21:30.233 X_V[3287:3907] TIME:2.583440 S.     -[JsonXV_OjbC_Test test_error_OjbectObjC]
+2013-08-10 12:21:30.234 X_V[3287:3907] TIME:62.683323 S.     JSONXV TEST END

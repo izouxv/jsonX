@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>088ACF79-3286-411C-982C-5046D5F47231</string>
+	<key>IDESourceControlProjectName</key>
+	<string>X_V</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>864C4D5C-8745-449F-83F3-3B7AA5607B58</key>
+		<string>ssh://img.sgjoy.com/testing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>_IOS/X_V/X_V.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>864C4D5C-8745-449F-83F3-3B7AA5607B58</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://img.sgjoy.com/testing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>864C4D5C-8745-449F-83F3-3B7AA5607B58</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>864C4D5C-8745-449F-83F3-3B7AA5607B58</string>
+			<key>IDESourceControlWCCName</key>
+			<string>testing</string>
+		</dict>
+	</array>
+</dict>
+</plist>
