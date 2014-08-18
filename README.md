@@ -1,6 +1,7 @@
 jsonX
 =====
 
+sample 1:
 
         Map map; 
         map.put("key", "value");
@@ -8,10 +9,11 @@ jsonX
         map.put("key2", 1);
         map.put("key3", 0.5);
         map.put("key4", Integer(6));
+         WARN<<__FUNCTION__<<map;
         
         
-        
-        
+sample 2:
+
         Integer num(2);
         String str("123");
         List list;
@@ -19,5 +21,8 @@ jsonX
         list.add(num);
         Map map;
         map.put("list", list);
+         WARN<<__FUNCTION__<<map;
+        
+       
         
         
